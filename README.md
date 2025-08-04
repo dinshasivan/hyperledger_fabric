@@ -159,6 +159,33 @@ Chaincode is the business logic of a Fabric application.
 
 ```DeleteAsset```: Remove asset
 
+## 🔄 Transaction Flow in Hyperledger Fabric
+
+1. **Client** submits a transaction proposal
+
+2. **Peers** simulate the transaction (endorsement)
+
+3. **Client** collects endorsements
+
+4. **Client** submits transaction to **Orderer**
+
+5. **Orderer** packages transactions into blocks
+
+Peers validate and commit the block to the ledger
+
+## 📑 Ledger Structure
+1. **Blockchain (Immutable)**
+   
+	Sequence of blocks
+	
+	Each block: list of transactions, hash of previous block
+
+2. **World State (Mutable)**
+   
+	Key-value store (LevelDB or CouchDB)
+	
+	Reflects latest state of assets
+
 ## 🛠 Useful Go Libraries in Fabric
 
 ```
