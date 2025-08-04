@@ -136,11 +136,16 @@ An interface in Go is a type that specifies a set of method signatures. A type i
 
 ## 🔧 Key Components
 
-**Peer :** Maintains ledger and runs chaincode         
-**Orderer :** Establishes consensus and orders transactions     
-**Chaincode :** Smart contract written in Go, JavaScript, or Java 
-**Channel :** Private communication layer between orgs        
-**CouchDB/LevelDB :** State database used by peers                      
+**Peer :** Maintains ledger and runs chaincode   
+
+**Orderer :** Establishes consensus and orders transactions   
+
+**Chaincode :** Smart contract written in Go, JavaScript, or Java
+
+**Channel :** Private communication layer between orgs   
+
+**CouchDB/LevelDB :** State database used by peers    
+
 **MSP (Membership Service Provider) :** Identity and access control  
 
 ## 🧠 Chaincode (Smart Contract)
