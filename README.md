@@ -1,4 +1,3 @@
-# hyperledger_fabric
 
 # Go-Lang
 Go is a programming language created by Google. Go is a fast statically typed, compiled language. It is a general purpose language. Go has built-in testing support. Go is an object-oriented language(in its own way).
@@ -131,3 +130,41 @@ A struct is a collection of fields. It groups related values under a single type
 
 An interface in Go is a type that specifies a set of method signatures. A type implements an interface if it defines the methods declared by the interface. Go interfaces provide polymorphism without explicit inheritance.
 
+# Hyperledger_Fabric
+
+**Hyperledger Fabric is an open-source permissioned blockchain platform designed for enterprise-grade applications. It offers a modular architecture, pluggable consensus, and confidentiality features suited for complex business use cases.**
+
+## 🔧 Key Components
+
+**Peer :** Maintains ledger and runs chaincode         
+**Orderer :** Establishes consensus and orders transactions     
+**Chaincode :** Smart contract written in Go, JavaScript, or Java 
+**Channel :** Private communication layer between orgs        
+**CouchDB/LevelDB :** State database used by peers                      
+**MSP (Membership Service Provider) :** Identity and access control  
+
+## 🧠 Chaincode (Smart Contract)
+
+Chaincode is the business logic of a Fabric application. 
+
+**Chaincode functions:**
+
+```InitLedger```: Initialize the ledger
+
+```CreateAsset```: Add new asset
+
+```ReadAsset```: Retrieve asset
+
+```UpdateAsset```: Modify asset
+
+```DeleteAsset```: Remove asset
+
+## 🛠 Useful Go Libraries in Fabric
+
+```
+    github.com/hyperledger/fabric-contract-api-go/contractapi
+
+    github.com/hyperledger/fabric-chaincode-go/shim
+
+    encoding/json, fmt, errors
+```
